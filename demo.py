@@ -6,7 +6,7 @@ import json
 import os
 
 
-SERVER_URL = 'http://localhost:8000'
+SERVER_URL = os.environ.get('SERVER_URL', 'http://localhost:8000')
 OUTPUT = "./demo_outputs"
 cloned_speakers = {}
 
